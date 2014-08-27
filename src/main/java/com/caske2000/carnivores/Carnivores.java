@@ -49,6 +49,8 @@ public class Hunter {
 		FMLCommonHandler.instance().bus().register(new KeyHandler());
 
 		ModItems.init();
+		
+		ModBlocks.init();
 
 		/*
 		 * Handlers
