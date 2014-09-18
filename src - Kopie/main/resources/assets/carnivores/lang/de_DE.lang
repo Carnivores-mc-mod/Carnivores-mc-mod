@@ -1,0 +1,11 @@
+item.carnivores:gun.name=Waffe
+2	item.carnivores:ammo.name=Munition
+3	
+4	entity.Bullet.name=Kugel
+5	entity.Utahraptor.name=Utahraptor
+6	
+7	itemGroup.carnivoresTab=Carnivores
+8	
+9	key.caske2000.category=Carnivores
+10	key.caske2000.points=Punkte
+11	tile.carnivores:unknownBox.name = Unbekannte Box
