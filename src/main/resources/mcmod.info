@@ -2,14 +2,14 @@
 {
   "modid": "carnivores",
   "name": "Carnivores",
-  "description": "Hunt dinosaurs in a new dimension, 
-  while collecting points for new weapons and technology as well as stuffed dinosaur trophies for posterity",
+  "description": "Hunt dinosaurs in new dimensions, 
+  while collecting points for new weapons and technologies, as well as stuffed dinosaur trophies for posterity",
   "version": "1.0",
   "mcversion": "1.7.10",
   "url": "",
   "updateUrl": "",
-  "authorList": ["Syxes", "Caske2000", "Darthvader45"],
-  "credits": "Syxes, Caske2000 and Darthvader45, for making this awesome mod",
+  "authorList": ["Syxes", "Caske2000", "Darthvader45", "Blackcove"],
+  "credits": "Syxes, Caske2000, Darthvader45, Blackcove for making this awesome mod",
   "logoFile": "",
   "screenshots": [],
   "dependencies": []
