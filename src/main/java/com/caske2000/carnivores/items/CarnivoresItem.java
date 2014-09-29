@@ -5,7 +5,7 @@ import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 
-import com.caske2000.carnivores.Hunter;
+import com.caske2000.carnivores.Carnivores;
 import com.caske2000.carnivores.reference.Reference;
 
 import cpw.mods.fml.relauncher.Side;
@@ -16,7 +16,7 @@ public class CarnivoresItem extends Item {
 	public CarnivoresItem() {
 
 		super();
-		setCreativeTab(Hunter.carnivoresTab);
+		setCreativeTab(Carnivores.carnivoresTab);
 		setMaxStackSize(64);
 
 	}

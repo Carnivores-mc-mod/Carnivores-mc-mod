@@ -7,26 +7,26 @@ import net.minecraft.util.MovingObjectPosition;
 import net.minecraft.util.MovingObjectPosition.MovingObjectType;
 import net.minecraft.world.World;
 
-public class EntityBullet extends EntityThrowable {
+public class EntityRifleBullet extends EntityThrowable {
 
-	private int lifeTime = 100;
-	private double speed = 1.501;
-	private final int damage = 6;
+	private int lifeTime = 200;
+	private double speed = 2.01;
+	private final int damage = 12;
 
-	public EntityBullet(World world) {
+	public EntityRifleBullet(World world) {
 
 		super(world);
 		setSize(0.5F, 0.5F);
 
 	}
 
-	public EntityBullet(World world, EntityLivingBase entity) {
+	public EntityRifleBullet(World world, EntityLivingBase entity) {
 
 		super(world, entity);
 
 	}
 
-	public EntityBullet(World world, double var2, double var3, double var4) {
+	public EntityRifleBullet(World world, double var2, double var3, double var4) {
 
 		super(world, var2, var3, var4);
 
@@ -57,7 +57,7 @@ public class EntityBullet extends EntityThrowable {
 	 */
 
 	public int getMaxLifetime() {
-		return 200;
+		return 800;
 	}
 
 	public float getAirResistance() {
@@ -65,7 +65,7 @@ public class EntityBullet extends EntityThrowable {
 	}
 
 	public float getGravity() {
-		return getGravityVelocity() < 3.0D ? 0.07F : 0.0F;
+		return 0.0F;
 	}
 
 	public int getMaxArrowShake() {

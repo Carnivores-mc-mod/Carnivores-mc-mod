@@ -2,7 +2,7 @@ package com.caske2000.carnivores.render;
 
 import net.minecraft.client.model.ModelBase;
 import net.minecraft.client.renderer.Tessellator;
-import net.minecraft.client.renderer.entity.RenderLiving;
+import net.minecraft.client.renderer.entity.Render;
 import net.minecraft.entity.Entity;
 import net.minecraft.util.ResourceLocation;
 
@@ -12,13 +12,13 @@ import com.caske2000.carnivores.entity.EntityBullet;
 import com.caske2000.carnivores.model.ModelBullet;
 import com.caske2000.carnivores.reference.Reference;
 
-public class RenderBullet extends RenderLiving {
+public class RenderPistolBullet extends Render {
 
 	private static final ResourceLocation bulletEntity = new ResourceLocation(Reference.MODID + "textures/entity/bullet.png");
 
-	public RenderBullet(ModelBase model, float var2) {
+	public RenderPistolBullet(ModelBase model, float var2) {
 
-		super(model, var2);
+		super();
 		shadowSize = 0.5F;
 
 	}

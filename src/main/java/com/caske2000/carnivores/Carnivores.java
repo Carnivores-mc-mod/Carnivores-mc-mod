@@ -3,6 +3,7 @@ package com.caske2000.carnivores;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 
+import com.caske2000.carnivores.blocks.ModBlocks;
 import com.caske2000.carnivores.handler.ConfigurationHandler;
 import com.caske2000.carnivores.handler.EntityHandler;
 import com.caske2000.carnivores.handler.KeyHandler;
@@ -21,10 +22,10 @@ import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 
 @Mod(modid = Reference.MODID, name = Reference.NAME, version = Reference.VERSION, guiFactory = Reference.GUIFACTORY_CLASS)
-public class Hunter {
+public class Carnivores {
 
 	@Mod.Instance(Reference.MODID)
-	public static Hunter instance;
+	public static Carnivores instance;
 
 	@SidedProxy(clientSide = Reference.CLIENTPROXY_CLASS, serverSide = Reference.COMMONPROXY_CLASS)
 	public static IProxy proxy;
@@ -34,7 +35,7 @@ public class Hunter {
 		@Override
 		@SideOnly(Side.CLIENT)
 		public Item getTabIconItem() {
-			return ModItems.gun;
+			return ModItems.pistol;
 		}
 	};
 
