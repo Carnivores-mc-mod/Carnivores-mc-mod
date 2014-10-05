@@ -1,4 +1,4 @@
 Carnivores-mc-mod
 =================
 
-Carnivores mod for minecraft.
+Carnivores mod for minecraft 1.7.10.
