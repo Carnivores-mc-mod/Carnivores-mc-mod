@@ -2,12 +2,13 @@ item.carnivores:pistol.name=Pistole
 item.carnivores:rifle.name=Gewehr
 item.carnivores:pistolammo.name=Pistole Munition
 item.carnivores:rifleammo.name=Gewehr Munition
-
 entity.Bullet.name=Kugel
 entity.Utahraptor.name=Utahraptor
 
-itemGroup.carnivoresTab=Fleischfresser
+itemGroup.carnivoresTab=Carnivores
 	
-	key.caske2000.category=Carnivores
-	key.caske2000.points=Punkte
-	tile.carnivores:unknownBox.name = Unbekannte Box
+key.caske2000.category=Carnivores
+key.caske2000.points=Punkte
+tile.carnivores:unknownBox.name = Unbekannte Box
+tile.carnivores:unknownEgg.name=Unbekanntes Ei
+tile.carnivores:unknownEggOpen.name=Unbekanntes Ei (Offen) 
