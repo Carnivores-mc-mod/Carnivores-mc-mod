@@ -22,7 +22,7 @@ public class BlockMud extends BlockFluidClassic {
 	
 	public BlockMud(Fluid fluid, Material material) {
         super(fluid, material);
-        setCreativeTab(CreativeTabs.tabMisc);
+        setCreativeTab(Carnivores.carnivoresTab);
 }
 	
 	 @Override
