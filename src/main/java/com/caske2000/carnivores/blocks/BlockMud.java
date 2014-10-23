@@ -1,10 +1,10 @@
 package com.caske2000.carnivores.blocks;
 
+import com.caske2000.carnivores.Carnivores;
 import com.caske2000.carnivores.reference.Reference;
 
 import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.texture.IIconRegister;
-import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.util.IIcon;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;

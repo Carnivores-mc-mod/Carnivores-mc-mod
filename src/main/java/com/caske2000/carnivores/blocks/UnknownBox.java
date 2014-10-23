@@ -18,7 +18,7 @@ private IIcon[] icons = new IIcon[6];
 		this.setBlockName(Reference.MODID + "_" + name);
 		this.setCreativeTab(Carnivores.carnivoresTab);
 		GameRegistry.registerBlock(this, name);
-		
+		this.setStepSound(soundTypeMetal);
 
 	}
 	
