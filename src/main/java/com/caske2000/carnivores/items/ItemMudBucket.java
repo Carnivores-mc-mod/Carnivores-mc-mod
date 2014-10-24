@@ -2,7 +2,6 @@ package com.caske2000.carnivores.items;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
-import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
@@ -10,6 +9,7 @@ import net.minecraft.item.ItemBucket;
 import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
 
+import com.caske2000.carnivores.Carnivores;
 import com.caske2000.carnivores.blocks.ModBlocks;
 import com.caske2000.carnivores.reference.Reference;
 
@@ -19,7 +19,7 @@ public class ItemMudBucket extends ItemBucket{
 
   protected ItemMudBucket(Block block, String fluidName) {
     super(block);
-    setCreativeTab(CreativeTabs.tabMisc);
+    setCreativeTab(Carnivores.carnivoresTab);
     setContainerItem(Items.bucket);
     setUnlocalizedName("bucket_mud");
     setTextureName(Reference.MODID + ":" + "bucket_mud");
