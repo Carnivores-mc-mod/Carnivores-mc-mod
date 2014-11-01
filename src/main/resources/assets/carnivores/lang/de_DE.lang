@@ -3,9 +3,11 @@ item.carnivores:rifle.name=Gewehr
 item.carnivores:pistolammo.name=Pistole Munition
 item.carnivores:rifleammo.name=Gewehr Munition
 item.mudBucket.name=Eimer Schlamm 
+
 entity.Bullet.name=Kugel
 entity.Utahraptor.name=Utahraptor
 entity.Ceratosaurus.name=Ceratosaurus
+entity.Suchomimus.name=Suchomimus
 
 itemGroup.carnivoresTab=Carnivores
 	
