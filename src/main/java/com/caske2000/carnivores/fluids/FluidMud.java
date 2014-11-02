@@ -8,7 +8,7 @@ public class FluidMud extends Fluid {
 		super("mud");
 		 setLuminosity (0);
 		 setDensity (1400);
-		 setViscosity (1400);
+		 setViscosity (3000);
 	}
 
 }
