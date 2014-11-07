@@ -1,5 +1,7 @@
 package com.caske2000.carnivores.entity;
 
+import com.caske2000.carnivores.reference.Reference;
+
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EnumCreatureAttribute;
 import net.minecraft.entity.SharedMonsterAttributes;

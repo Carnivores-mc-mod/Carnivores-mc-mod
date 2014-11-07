@@ -11,7 +11,7 @@ public class EntityBullet extends EntityThrowable {
 
 	private int lifeTime = 100;
 	private double speed = 1.501;
-	private final int damage = 6;
+	private int damage;
 
 	public EntityBullet(World world) {
 
@@ -65,7 +65,12 @@ public class EntityBullet extends EntityThrowable {
 	}
 
 	public float getGravity() {
-		return getGravityVelocity() < 3.0D ? 0.07F : 0.0F;
+		return getGravityVelocity();
+	}
+	
+	@Override
+	protected float getGravityVelocity() {
+	return 0.00F;
 	}
 
 	public int getMaxArrowShake() {

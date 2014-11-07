@@ -6,7 +6,6 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
 
 import com.caske2000.carnivores.Carnivores;
-
 import com.caske2000.carnivores.entity.EntityRifleBullet;
 import com.caske2000.carnivores.reference.Reference;
 

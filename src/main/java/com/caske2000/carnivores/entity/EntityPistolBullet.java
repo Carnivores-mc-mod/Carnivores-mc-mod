@@ -1,15 +1,14 @@
 package com.caske2000.carnivores.entity;
 
 import net.minecraft.entity.EntityLivingBase;
-import net.minecraft.entity.projectile.EntityThrowable;
 import net.minecraft.util.DamageSource;
 import net.minecraft.util.MovingObjectPosition;
 import net.minecraft.util.MovingObjectPosition.MovingObjectType;
 import net.minecraft.world.World;
 
-public class EntityPistolBullet extends EntityThrowable {
+public class EntityPistolBullet extends EntityBullet {
 
-	private int lifeTime = 200;
+	private int lifeTime = 100;
 	private double speed = 2.01;
 	private final int damage = 6;
 
@@ -57,11 +56,11 @@ public class EntityPistolBullet extends EntityThrowable {
 	 */
 
 	public int getMaxLifetime() {
-		return 200;
+		return 100;
 	}
 
 	public float getAirResistance() {
-		return 0.98F;
+		return 0.0F;
 	}
 
 	public float getGravity() {

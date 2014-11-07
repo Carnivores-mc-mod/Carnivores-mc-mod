@@ -2,12 +2,10 @@ item.carnivores:pistol.name=Pistole
 item.carnivores:rifle.name=Gewehr
 item.carnivores:pistolammo.name=Pistole Munition
 item.carnivores:rifleammo.name=Gewehr Munition
-item.mudBucket.name=Eimer Schlamm 
-
+item.mudBucket.name=Eimer Schlamm
 entity.Bullet.name=Kugel
 entity.Utahraptor.name=Utahraptor
 entity.Ceratosaurus.name=Ceratosaurus
-entity.Suchomimus.name=Suchomimus
 
 itemGroup.carnivoresTab=Carnivores
 	
@@ -17,4 +15,4 @@ tile.carnivores_unknownBox.name = Unbekannte Box
 tile.UnknownEgg.name=Unbekanntes Ei
 tile.UnknownEggOpen.name=Unbekanntes Ei (Offen)
 tile.carnivores_crate.name=Kiste
-tile.mud.name=Schlamm
+tile.mud.name=Mud
