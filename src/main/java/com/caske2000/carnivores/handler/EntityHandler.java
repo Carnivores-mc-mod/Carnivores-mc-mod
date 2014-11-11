@@ -8,6 +8,7 @@ import com.caske2000.carnivores.entity.EntityCeratosaurus;
 import com.caske2000.carnivores.entity.EntityIndricotherium;
 import com.caske2000.carnivores.entity.EntitySuchomimus;
 import com.caske2000.carnivores.entity.EntityUtahraptor;
+import com.caske2000.carnivores.entity.EntityXBowBolt;
 
 import cpw.mods.fml.common.registry.EntityRegistry;
 
@@ -25,6 +26,7 @@ public class EntityHandler {
 
 		EntityRegistry.registerGlobalEntityID(EntityBullet.class, "Bullet", id = EntityRegistry.findGlobalUniqueEntityId());
 		EntityRegistry.registerModEntity(EntityBullet.class, "Bullet", id, Carnivores.instance, 120, 1, true);
+		EntityRegistry.registerModEntity(EntityXBowBolt.class, "XBow Bolt", id, Carnivores.instance, 120, 1, true);
 
 		createEntity(EntityUtahraptor.class, "Utahraptor", 64, 1, true, 0x8B8782, 0x5B5550);
 		createEntity(EntityCeratosaurus.class, "Ceratosaurus", 64, 1, true, 0xFD3D12, 0x1D1D1D); 

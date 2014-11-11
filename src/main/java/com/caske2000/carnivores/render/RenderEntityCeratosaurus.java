@@ -15,7 +15,7 @@ import cpw.mods.fml.relauncher.SideOnly;
 @SideOnly(Side.CLIENT)
 public class RenderEntityCeratosaurus extends RenderLiving {
 
-	private static final ResourceLocation ceratoTextures = new ResourceLocation(Reference.MODID + ":textures/entity/Ceratosaurus.png");
+	private static final ResourceLocation ceratoTextures = new ResourceLocation(Reference.MODID + ":" + "textures/entity/ceratosaurus.png");
 	private static final String __OBFID = "CL_00000984";
 
 	public RenderEntityCeratosaurus(ModelBase modelBase, float var2) {

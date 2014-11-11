@@ -14,7 +14,7 @@ import cpw.mods.fml.relauncher.SideOnly;
 @SideOnly(Side.CLIENT)
 public class RenderEntityUtahraptor extends RenderLiving {
 
-	private static final ResourceLocation utahTextures = new ResourceLocation(Reference.MODID + ":textures/entity/Utahraptor.png");
+	private static final ResourceLocation utahTextures = new ResourceLocation(Reference.MODID + ":textures/entity/utahRaptor.png");
 	private static final String __OBFID = "CL_00000984";
 
 	public RenderEntityUtahraptor(ModelBase mobelBase, float var2) {

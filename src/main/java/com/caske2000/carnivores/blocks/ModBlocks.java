@@ -38,6 +38,7 @@ public static void init(){
 	FluidRegistry.registerFluid(mudFluid);
 	mudFluidBlock = new BlockMud(mudFluid, Material.water).setBlockName("mud");
 	GameRegistry.registerBlock(mudFluidBlock, "mud");
+	GameRegistry.registerBlock(crate, "crate");
 	
 }
 }

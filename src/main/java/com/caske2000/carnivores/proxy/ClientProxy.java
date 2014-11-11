@@ -9,18 +9,20 @@ import com.caske2000.carnivores.entity.EntityBullet;
 import com.caske2000.carnivores.entity.EntityCeratosaurus;
 import com.caske2000.carnivores.entity.EntitySuchomimus;
 import com.caske2000.carnivores.entity.EntityUtahraptor;
-import com.caske2000.carnivores.model.ModelBullet;
+import com.caske2000.carnivores.entity.EntityXBowBolt;
 import com.caske2000.carnivores.model.ModelCeratosaurus;
 import com.caske2000.carnivores.model.ModelSuchomimus;
 import com.caske2000.carnivores.model.ModelUtahraptor;
+import com.caske2000.carnivores.model.ModelXBowBolt;
 import com.caske2000.carnivores.render.ItemRendererUnknownEgg;
 import com.caske2000.carnivores.render.ItemRendererUnknownEggOpen;
+import com.caske2000.carnivores.render.RenderBullet;
 import com.caske2000.carnivores.render.RenderEntityCeratosaurus;
 import com.caske2000.carnivores.render.RenderEntitySuchomimus;
 import com.caske2000.carnivores.render.RenderEntityUtahraptor;
-import com.caske2000.carnivores.render.RenderBullet;
 import com.caske2000.carnivores.render.RenderUnknownEgg;
 import com.caske2000.carnivores.render.RenderUnknownEggOpen;
+import com.caske2000.carnivores.render.RenderXBowBolt;
 import com.caske2000.carnivores.tileentities.TileEntityUnknownEgg;
 import com.caske2000.carnivores.tileentities.TileEntityUnknownEggOpen;
 
@@ -34,6 +36,7 @@ public class ClientProxy extends CommonProxy {
 		super.registerRenderers();
 
 		RenderingRegistry.registerEntityRenderingHandler(EntityBullet.class, new RenderBullet());
+		RenderingRegistry.registerEntityRenderingHandler(EntityXBowBolt.class, new RenderXBowBolt());
 		RenderingRegistry.registerEntityRenderingHandler(EntityUtahraptor.class, new RenderEntityUtahraptor(new ModelUtahraptor(), 0));
 		RenderingRegistry.registerEntityRenderingHandler(EntityCeratosaurus.class, new RenderEntityCeratosaurus(new ModelCeratosaurus(), 0));
 		RenderingRegistry.registerEntityRenderingHandler(EntitySuchomimus.class, new RenderEntitySuchomimus(new ModelSuchomimus(), 0));

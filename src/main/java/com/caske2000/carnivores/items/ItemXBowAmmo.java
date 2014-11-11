@@ -2,16 +2,14 @@ package com.caske2000.carnivores.items;
 
 import com.caske2000.carnivores.Carnivores;
 
+import net.minecraft.item.Item;
 
-public class ItemPistolAmmo extends CarnivoresItem {
+public class ItemXBowAmmo extends CarnivoresItem {
 
-	public ItemPistolAmmo() 
+	public ItemXBowAmmo()
 	{
-
 		super();
-		this.setUnlocalizedName("pistolammo");
+		this.setUnlocalizedName("xbowammo");
 		this.setCreativeTab(Carnivores.carnivoresTab);
-		
 	}
-
 }
