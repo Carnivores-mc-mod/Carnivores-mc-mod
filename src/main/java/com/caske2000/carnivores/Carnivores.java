@@ -41,7 +41,7 @@ public class Carnivores
 		@SideOnly(Side.CLIENT)
 		public Item getTabIconItem() 
 		{
-			return ModItems.pistol;
+			return ModItems.creativetab_logo;
 		}
 	};
 
