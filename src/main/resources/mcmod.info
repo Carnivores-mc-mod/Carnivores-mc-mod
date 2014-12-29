@@ -10,9 +10,9 @@
   "url": "http://carnivores-minecraft-mod.weebly.com/",
   "updateUrl": "",
   "authorList": ["Syxes", "Caske2000", "Darthvader45", "Blackcove"],
-  "credits": "Syxes, Caske2000, Darthvader45, Blackcove
+  "credits": "Carnivores Minecraft Team
   for making this awesome mod",
-  "logoFile": "banner1.png",
+  "logoFile": "/banner1.png",
   "screenshots": [],
   "dependencies": []
 }
