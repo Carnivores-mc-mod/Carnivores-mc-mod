@@ -2,7 +2,7 @@ package com.caske2000.carnivores.blocks;
 
 import com.caske2000.carnivores.Carnivores;
 import com.caske2000.carnivores.reference.Reference;
-
+import com.caske2000.carnivores.blocks.ModBlocks;
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
@@ -34,4 +34,9 @@ private IIcon[] icons = new IIcon[6];
 	public IIcon getIcon(int side, int meta) {
 	    return icons[side];
 	}
+	
+	@Override
+        public Item getItemDropped(int metadata, Random random, int fortune) {
+            return Item.getItemFromBlock(ModBlocks.unknownBox);
+        }
 }
