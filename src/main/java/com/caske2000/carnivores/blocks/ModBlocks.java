@@ -26,7 +26,7 @@ public class ModBlocks
 	public static Block crate;
 
 public static void init(){
-	unknownBox = new UnknownBox();
+	unknownBox = new UnknownBox().setHardness(5.0F).setResistance(30.0F);
 	crate = new BlockCrate();
 	unknownEgg = new BlockUnknownEgg(Material.wood).setBlockName("UnknownEgg").setBlockTextureName(Reference.MODID + ":" + "unknownEggParticles");
 	unknownEggOpen = new BlockUnknownEggOpen(Material.wood).setBlockName("UnknownEggOpen").setBlockTextureName(Reference.MODID + ":" + "unknownEggParticles");
