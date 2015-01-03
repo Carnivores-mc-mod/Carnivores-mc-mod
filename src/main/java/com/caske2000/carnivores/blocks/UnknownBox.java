@@ -1,14 +1,17 @@
 package com.caske2000.carnivores.blocks;
 
-import com.caske2000.carnivores.Carnivores;
-import com.caske2000.carnivores.reference.Reference;
-import com.caske2000.carnivores.blocks.ModBlocks;
-import cpw.mods.fml.common.registry.GameRegistry;
+import java.util.Random;
+
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.texture.IIconRegister;
-import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.item.Item;
 import net.minecraft.util.IIcon;
+
+import com.caske2000.carnivores.Carnivores;
+import com.caske2000.carnivores.reference.Reference;
+
+import cpw.mods.fml.common.registry.GameRegistry;
 
 public class UnknownBox extends Block {
 static String name = "unknownBox";
