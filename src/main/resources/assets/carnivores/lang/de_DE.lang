@@ -1,20 +1,26 @@
 item.carnivores:pistol.name=Pistole
 item.carnivores:rifle.name=Gewehr
-item.carnivores:pistolammo.name=Pistole Munition
+item.carnivores:pistolammo.name=Pistolen Munition
 item.carnivores:rifleammo.name=Gewehr Munition
 item.mudBucket.name=Eimer Schlamm
-item.carnivores.xbow.name=X-Bogen
-item.carnivores.xbowammo.name=X-Bogen Munition
+item.carnivores:xbow.name=Kreuzbogen
+item.carnivores:xbowammo.name=Kreuzbogen Munition
+
 entity.Bullet.name=Kugel
 entity.Utahraptor.name=Utahraptor
 entity.Ceratosaurus.name=Ceratosaurus
+entity.Suchomimus.name=Suchomimus
 
 itemGroup.carnivoresTab=Carnivores
-	
+
 key.caske2000.category=Carnivores
 key.caske2000.points=Punkte
-tile.carnivores_unknownBox.name = Unbekannte Box
+tile.carnivores_unknownBox.name=Unbekannte Box
 tile.UnknownEgg.name=Unbekanntes Ei
-tile.UnknownEggOpen.name=Unbekanntes Ei (Offen)
+tile.UnknownEggOpen.name=Unbekanntes Ei (Open)
 tile.carnivores_crate.name=Kiste
-tile.mud.name=Mud
+tile.mud.name=Schlamm
+tile.carnivores_trophyDrain.name=Trophaenplatte-Schacht
+tile.carnivores_trophyPlatformEnd.name=Trophaenplatte-Plattformende
+tile.carnivores_trophyPlatformEndConnected.name=Trophaenplatte-verbundenes Plattformende
+tile.carnivores_trophyTileBase.name=Trophaenplatte
