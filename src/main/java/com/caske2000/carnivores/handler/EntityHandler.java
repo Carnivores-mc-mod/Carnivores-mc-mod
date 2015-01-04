@@ -29,7 +29,7 @@ public class EntityHandler {
 		EntityRegistry.registerModEntity(EntityXBowBolt.class, "XBow Bolt", id, Carnivores.instance, 120, 1, true);
 
 		createEntity(EntityUtahraptor.class, "Utahraptor", 64, 1, true, 0x8B8782, 0x5B5550);
-		createEntity(EntityCeratosaurus.class, "Ceratosaurus", 64, 1, true, 0xFD3D12, 0x1D1D1D); 
+		createEntity(EntityCeratosaurus.class, "Ceratosaurus", 64, 1, true, 0xFD3D12, 0x1D1D1D);
 		createEntity(EntityIndricotherium.class, "Indricotherium", 64, 1, true, 0xFD3D12, 0x1D1D1D);
 		createEntity(EntitySuchomimus.class, "Suchomimus", 64, 1, true, 0x0A3D11, 0xFFBF29);
 	}

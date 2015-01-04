@@ -1,7 +1,5 @@
 package com.caske2000.carnivores.entity;
 
-import com.caske2000.carnivores.reference.Reference;
-
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EnumCreatureAttribute;
 import net.minecraft.entity.SharedMonsterAttributes;
@@ -47,6 +45,7 @@ public class EntityCarnivoresMob extends EntityMob {
 
 	}
 
+	@Override
 	public EnumCreatureAttribute getCreatureAttribute() {
 
 		return EnumCreatureAttribute.UNDEFINED;
@@ -61,12 +60,14 @@ public class EntityCarnivoresMob extends EntityMob {
 		return 0.2D;
 	}
 
+	@Override
 	public boolean isAIEnabled() {
 
 		return true;
 
 	}
 
+	@Override
 	protected void applyEntityAttributes() {
 
 		super.applyEntityAttributes();
@@ -79,6 +80,7 @@ public class EntityCarnivoresMob extends EntityMob {
 
 	}
 
+	@Override
 	protected Entity findPlayerToAttack() {
 
 		float f = this.getBrightness(1.0F);
@@ -132,13 +134,14 @@ public class EntityCarnivoresMob extends EntityMob {
 	 * }
 	 */
 
+	@Override
 	public boolean attackEntityAsMob(Entity p_70652_1_) {
 		boolean flag = super.attackEntityAsMob(p_70652_1_);
 
 		if (flag) {
 			int i = this.worldObj.difficultySetting.getDifficultyId();
 
-			if (this.getHeldItem() == null && this.isBurning() && this.rand.nextFloat() < (float) i * 0.3F) {
+			if (this.getHeldItem() == null && this.isBurning() && this.rand.nextFloat() < i * 0.3F) {
 				p_70652_1_.setFire(2 * i);
 			}
 		}

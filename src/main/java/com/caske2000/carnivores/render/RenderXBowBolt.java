@@ -1,30 +1,30 @@
 package com.caske2000.carnivores.render;
 
-import org.lwjgl.opengl.GL11;
-
-import com.caske2000.carnivores.entity.EntityXBowBolt;
-import com.caske2000.carnivores.model.ModelXBowBolt;
-import com.caske2000.carnivores.reference.Reference;
-
 import net.minecraft.client.model.ModelBase;
 import net.minecraft.client.renderer.Tessellator;
 import net.minecraft.client.renderer.entity.Render;
 import net.minecraft.entity.Entity;
 import net.minecraft.util.ResourceLocation;
 
+import org.lwjgl.opengl.GL11;
+
+import com.caske2000.carnivores.entity.EntityXBowBolt;
+import com.caske2000.carnivores.model.ModelXBowBolt;
+import com.caske2000.carnivores.reference.Reference;
+
 public class RenderXBowBolt extends Render {
 
 	private static final ResourceLocation boltEntity = new ResourceLocation(Reference.MODID + ":" + "textures/entity/xbowbolt.png");
 
 	private ModelBase model;
-	
+
 	public RenderXBowBolt() {
 
 		super();
 		shadowSize = 0.5F;
 		model = new ModelXBowBolt();
 	}
-	
+
 	@Override
 	public void doRender(Entity entity, double d, double d1, double d2, float f, float f1) {
 		GL11.glPushMatrix();
@@ -53,6 +53,7 @@ public class RenderXBowBolt extends Render {
 		// TODO Auto-generated method stub
 		return getCustomTexture((EntityXBowBolt) entity);
 	}
+
 	protected ResourceLocation getCustomTexture(EntityXBowBolt entity) {
 
 		return boltEntity;

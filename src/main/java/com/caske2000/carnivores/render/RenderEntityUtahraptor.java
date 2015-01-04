@@ -37,6 +37,7 @@ public class RenderEntityUtahraptor extends RenderLiving {
 	 * Returns the location of an entity's texture. Doesn't seem to be called
 	 * unless you call Render.bindEntityTexture.
 	 */
+	@Override
 	protected ResourceLocation getEntityTexture(Entity entity) {
 
 		return this.getEntityTexture((EntityUtahraptor) entity);

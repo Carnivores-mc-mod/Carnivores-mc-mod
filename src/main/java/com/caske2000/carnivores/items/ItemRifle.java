@@ -1,6 +1,5 @@
 package com.caske2000.carnivores.items;
 
-import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
@@ -8,7 +7,6 @@ import net.minecraft.world.World;
 import com.caske2000.carnivores.Carnivores;
 import com.caske2000.carnivores.entity.EntityRifleBullet;
 import com.caske2000.carnivores.reference.Reference;
-
 
 public class ItemRifle extends CarnivoresItem {
 

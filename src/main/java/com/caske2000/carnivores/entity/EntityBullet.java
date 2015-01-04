@@ -67,10 +67,10 @@ public class EntityBullet extends EntityThrowable {
 	public float getGravity() {
 		return getGravityVelocity();
 	}
-	
+
 	@Override
 	protected float getGravityVelocity() {
-	return 0.00F;
+		return 0.00F;
 	}
 
 	public int getMaxArrowShake() {

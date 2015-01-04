@@ -9,7 +9,6 @@ import net.minecraft.util.ResourceLocation;
 import org.lwjgl.opengl.GL11;
 
 import com.caske2000.carnivores.entity.EntityBullet;
-import com.caske2000.carnivores.model.ModelBullet;
 import com.caske2000.carnivores.reference.Reference;
 
 public class RenderPistolBullet extends Render {
@@ -41,9 +40,8 @@ public class RenderPistolBullet extends Render {
 		}
 		GL11.glDisable(32826);
 		GL11.glPopMatrix();
-		
+
 	}
-	
 
 	@Override
 	public void doRender(Entity entity, double d, double d1, double d2, float f, float f1) {

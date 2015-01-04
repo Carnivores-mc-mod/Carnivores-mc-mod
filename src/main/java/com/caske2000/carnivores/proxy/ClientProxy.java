@@ -13,7 +13,6 @@ import com.caske2000.carnivores.entity.EntityXBowBolt;
 import com.caske2000.carnivores.model.ModelCeratosaurus;
 import com.caske2000.carnivores.model.ModelSuchomimus;
 import com.caske2000.carnivores.model.ModelUtahraptor;
-import com.caske2000.carnivores.model.ModelXBowBolt;
 import com.caske2000.carnivores.render.ItemRendererUnknownEgg;
 import com.caske2000.carnivores.render.ItemRendererUnknownEggOpen;
 import com.caske2000.carnivores.render.RenderBullet;
@@ -31,6 +30,7 @@ import cpw.mods.fml.client.registry.RenderingRegistry;
 
 public class ClientProxy extends CommonProxy {
 
+	@Override
 	public void registerRenderers() {
 
 		super.registerRenderers();
@@ -44,12 +44,14 @@ public class ClientProxy extends CommonProxy {
 		ClientRegistry.bindTileEntitySpecialRenderer(TileEntityUnknownEgg.class, render);
 		TileEntitySpecialRenderer render2 = new RenderUnknownEggOpen();
 		ClientRegistry.bindTileEntitySpecialRenderer(TileEntityUnknownEggOpen.class, render2);
-		MinecraftForgeClient.registerItemRenderer(Item.getItemFromBlock(ModBlocks.unknownEgg), new ItemRendererUnknownEgg(render, new TileEntityUnknownEgg()));
-		MinecraftForgeClient.registerItemRenderer(Item.getItemFromBlock(ModBlocks.unknownEggOpen), new ItemRendererUnknownEggOpen(render2, new TileEntityUnknownEggOpen()));
+		MinecraftForgeClient.registerItemRenderer(Item.getItemFromBlock(ModBlocks.unknownEgg), new ItemRendererUnknownEgg(render,
+				new TileEntityUnknownEgg()));
+		MinecraftForgeClient.registerItemRenderer(Item.getItemFromBlock(ModBlocks.unknownEggOpen), new ItemRendererUnknownEggOpen(render2,
+				new TileEntityUnknownEggOpen()));
 	}
 
-	public void registerTileEntitySpecialRenderer(){
-		
+	public void registerTileEntitySpecialRenderer() {
+
 	}
-	
+
 }

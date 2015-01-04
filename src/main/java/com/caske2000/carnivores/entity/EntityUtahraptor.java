@@ -1,10 +1,8 @@
 package com.caske2000.carnivores.entity;
 
-import com.caske2000.carnivores.reference.Reference;
-
-import net.minecraft.entity.SharedMonsterAttributes;
-import net.minecraft.util.DamageSource;
 import net.minecraft.world.World;
+
+import com.caske2000.carnivores.reference.Reference;
 
 public class EntityUtahraptor extends EntityCarnivoresMob {
 
@@ -12,16 +10,16 @@ public class EntityUtahraptor extends EntityCarnivoresMob {
 
 		super(world);
 		this.setSize(2.7F, 2.0F);
-		
+
 	}
-	
-	protected String getHurtSound()
-	{
+
+	@Override
+	protected String getHurtSound() {
 		return Reference.MODID + ":" + "mobs.utahraptor.hurt";
 	}
-	
-	protected String getDeathSound()
-	{
+
+	@Override
+	protected String getDeathSound() {
 		return Reference.MODID + ":" + "mobs.utahraptor.die";
 	}
 }

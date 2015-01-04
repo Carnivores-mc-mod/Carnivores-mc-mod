@@ -6,7 +6,6 @@ import net.minecraft.entity.Entity;
 import net.minecraft.util.ResourceLocation;
 
 import com.caske2000.carnivores.entity.EntityCeratosaurus;
-import com.caske2000.carnivores.entity.EntityUtahraptor;
 import com.caske2000.carnivores.reference.Reference;
 
 import cpw.mods.fml.relauncher.Side;
@@ -38,12 +37,10 @@ public class RenderEntityCeratosaurus extends RenderLiving {
 	 * Returns the location of an entity's texture. Doesn't seem to be called
 	 * unless you call Render.bindEntityTexture.
 	 */
+	@Override
 	protected ResourceLocation getEntityTexture(Entity entity) {
 		// TODO Auto-generated method stub
-		return this.getEntityTexture((EntityCeratosaurus)entity);
+		return this.getEntityTexture((EntityCeratosaurus) entity);
 	}
-
-	
-	
 
 }

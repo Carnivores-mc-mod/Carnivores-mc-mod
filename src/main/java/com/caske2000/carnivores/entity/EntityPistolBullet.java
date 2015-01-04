@@ -55,18 +55,22 @@ public class EntityPistolBullet extends EntityBullet {
 	 * }
 	 */
 
+	@Override
 	public int getMaxLifetime() {
 		return 100;
 	}
 
+	@Override
 	public float getAirResistance() {
 		return 0.0F;
 	}
 
+	@Override
 	public float getGravity() {
 		return getGravityVelocity() < 3.0D ? 0.07F : 0.0F;
 	}
 
+	@Override
 	public int getMaxArrowShake() {
 		return 0;
 	}

@@ -33,8 +33,9 @@ public class RenderEntitySuchomimus extends RenderLiving {
 
 	}
 
+	@Override
 	protected ResourceLocation getEntityTexture(Entity entity) {
 		// TODO Auto-generated method stub
-		return this.getEntityTexture((EntitySuchomimus)entity);
+		return this.getEntityTexture((EntitySuchomimus) entity);
 	}
 }

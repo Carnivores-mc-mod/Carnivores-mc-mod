@@ -25,8 +25,7 @@ import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 
 @Mod(modid = Reference.MODID, name = Reference.NAME, version = Reference.VERSION, guiFactory = Reference.GUIFACTORY_CLASS)
-public class Carnivores 
-{
+public class Carnivores {
 
 	@Mod.Instance(Reference.MODID)
 	public static Carnivores instance;
@@ -34,20 +33,17 @@ public class Carnivores
 	@SidedProxy(clientSide = Reference.CLIENTPROXY_CLASS, serverSide = Reference.COMMONPROXY_CLASS)
 	public static CommonProxy proxy;
 
-	public static CreativeTabs carnivoresTab = new CreativeTabs("carnivoresTab") 
-	{
+	public static CreativeTabs carnivoresTab = new CreativeTabs("carnivoresTab") {
 
 		@Override
 		@SideOnly(Side.CLIENT)
-		public Item getTabIconItem() 
-		{
+		public Item getTabIconItem() {
 			return ModItems.pistol;
 		}
 	};
 
 	@Mod.EventHandler
-	public void PreInit(FMLPreInitializationEvent event) 
-	{
+	public void PreInit(FMLPreInitializationEvent event) {
 
 		System.out.println(KeyHandler.points);
 
@@ -57,7 +53,7 @@ public class Carnivores
 		FMLCommonHandler.instance().bus().register(new KeyHandler());
 
 		ModItems.init();
-		
+
 		ModBlocks.init();
 		MinecraftForge.EVENT_BUS.register(new BucketHandler());
 		/*
@@ -70,23 +66,21 @@ public class Carnivores
 		 */
 		proxy.registerRenderers();
 		proxy.registerKeybindings();
-	    NetworkRegistry.INSTANCE.registerGuiHandler(instance, proxy);
+		NetworkRegistry.INSTANCE.registerGuiHandler(instance, proxy);
 
 		LogHelper.info("Pre Initialization Completed!");
 
 	}
 
 	@Mod.EventHandler
-	public void init(FMLInitializationEvent event) 
-	{
+	public void init(FMLInitializationEvent event) {
 
 		LogHelper.info("Initialization Completed!");
 
 	}
 
 	@Mod.EventHandler
-	public void PostInit(FMLPostInitializationEvent event) 
-	{
+	public void PostInit(FMLPostInitializationEvent event) {
 
 		LogHelper.info("Post Initialization Completed!");
 

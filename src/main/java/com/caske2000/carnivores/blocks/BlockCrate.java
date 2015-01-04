@@ -15,31 +15,29 @@ public class BlockCrate extends Block {
 
 	static String name = "crate";
 	private IIcon[] icons = new IIcon[6];
-		protected BlockCrate() 
-		{
-			super(Material.iron);
-			this.setBlockName(Reference.MODID + "_" + name);
-			this.setCreativeTab(Carnivores.carnivoresTab);
-			this.setStepSound(soundTypeMetal);
-		}
 
-		@Override
-		public void registerBlockIcons(IIconRegister iconRegister) 
-		{
-		    for (int i = 0; i < icons.length; i++) 
-		    {
-		        icons[i] = iconRegister.registerIcon(Reference.MODID + ":" + name + i);
-		    }
+	protected BlockCrate() {
+		super(Material.iron);
+		this.setBlockName(Reference.MODID + "_" + name);
+		this.setCreativeTab(Carnivores.carnivoresTab);
+		this.setStepSound(soundTypeMetal);
+	}
+
+	@Override
+	public void registerBlockIcons(IIconRegister iconRegister) {
+		for (int i = 0; i < icons.length; i++) {
+			icons[i] = iconRegister.registerIcon(Reference.MODID + ":" + name + i);
 		}
-		@Override
-		public IIcon getIcon(int side, int meta) 
-		{
-		    return icons[side];
-		}
-		
-		@Override
-        public Item getItemDropped(int metadata, Random random, int fortune) {
-            return Item.getItemFromBlock(ModBlocks.crate);
-        }
-		
+	}
+
+	@Override
+	public IIcon getIcon(int side, int meta) {
+		return icons[side];
+	}
+
+	@Override
+	public Item getItemDropped(int metadata, Random random, int fortune) {
+		return Item.getItemFromBlock(ModBlocks.crate);
+	}
+
 }

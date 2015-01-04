@@ -55,18 +55,22 @@ public class EntityRifleBullet extends EntityBullet {
 	 * }
 	 */
 
+	@Override
 	public int getMaxLifetime() {
 		return 400;
 	}
 
+	@Override
 	public float getAirResistance() {
 		return 0.0F;
 	}
 
+	@Override
 	public float getGravity() {
 		return 0.0F;
 	}
 
+	@Override
 	public int getMaxArrowShake() {
 		return 0;
 	}

@@ -17,7 +17,7 @@ public class RenderBullet extends Render {
 	private static final ResourceLocation bulletEntity = new ResourceLocation(Reference.MODID + ":" + "textures/entity/bullet.png");
 
 	private ModelBase model;
-	
+
 	public RenderBullet() {
 
 		super();
@@ -25,12 +25,9 @@ public class RenderBullet extends Render {
 		model = new ModelBullet();
 	}
 
-	
-	
-
 	@Override
 	public void doRender(Entity entity, double d, double d1, double d2, float f, float f1) {
-		
+
 		GL11.glPushMatrix();
 		this.bindTexture(bulletEntity);
 		GL11.glTranslatef((float) d, (float) d1, (float) d2);
@@ -51,13 +48,16 @@ public class RenderBullet extends Render {
 		GL11.glPopMatrix();
 
 	}
+
 	@Override
 	protected ResourceLocation getEntityTexture(Entity entity) {
-	// this method should return your texture, which may be different based
-	// on certain characteristics of your custom entity; if that is the case,
-	// you may want to make a second method that takes your class:
-	return getCustomTexture((EntityBullet) entity);
+		// this method should return your texture, which may be different based
+		// on certain characteristics of your custom entity; if that is the
+		// case,
+		// you may want to make a second method that takes your class:
+		return getCustomTexture((EntityBullet) entity);
 	}
+
 	protected ResourceLocation getCustomTexture(EntityBullet entity) {
 
 		return bulletEntity;
