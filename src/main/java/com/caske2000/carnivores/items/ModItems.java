@@ -15,8 +15,7 @@ public class ModItems {
 	public static final CarnivoresItem rifle = new ItemRifle();
 	public static final CarnivoresItem xbow = new ItemXBow();
 	public static final CarnivoresItem ammo3 = new ItemXBowAmmo();
-	public static final Item mudBucket = new ItemMudBucket(ModBlocks.mudFluidBlock, "mudBucket").setUnlocalizedName("mudBucket").setContainerItem(
-			Items.bucket);
+	public static final Item mudBucket = new ItemMudBucket(ModBlocks.mudFluidBlock, "mudBucket").setUnlocalizedName("mudBucket").setContainerItem(Items.bucket);
 
 	public static void init() {
 

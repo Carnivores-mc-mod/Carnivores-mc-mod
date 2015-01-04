@@ -46,12 +46,10 @@ public class KeyHandler {
 
 			if (keys[CUSTOM_INV].isPressed()) {
 
-				ChatComponentText test = new ChatComponentText("Your Points: "
-						+ Minecraft.getMinecraft().thePlayer.getEntityData().getInteger("Points"));
+				ChatComponentText test = new ChatComponentText("Your Points: " + Minecraft.getMinecraft().thePlayer.getEntityData().getInteger("Points"));
 
 				Minecraft.getMinecraft().thePlayer.addChatMessage(test);
-				Minecraft.getMinecraft().thePlayer.getEntityData().setInteger("Points",
-						Minecraft.getMinecraft().thePlayer.getEntityData().getInteger("Points") + 1);
+				Minecraft.getMinecraft().thePlayer.getEntityData().setInteger("Points", Minecraft.getMinecraft().thePlayer.getEntityData().getInteger("Points") + 1);
 
 			}
 

@@ -15,7 +15,7 @@ public class BlockTrophyTileBase extends Block {
 	private IIcon[] icons = new IIcon[6];
 
 	protected BlockTrophyTileBase() {
-		super(Material.iron);
+		super(Material.ground);
 		this.setBlockName(Reference.MODID + "_" + name);
 		this.setCreativeTab(Carnivores.carnivoresTab);
 		this.setStepSound(soundTypeMetal);

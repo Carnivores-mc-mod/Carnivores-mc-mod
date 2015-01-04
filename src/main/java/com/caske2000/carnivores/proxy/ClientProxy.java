@@ -35,19 +35,22 @@ public class ClientProxy extends CommonProxy {
 
 		super.registerRenderers();
 
+		// Entities
 		RenderingRegistry.registerEntityRenderingHandler(EntityBullet.class, new RenderBullet());
 		RenderingRegistry.registerEntityRenderingHandler(EntityXBowBolt.class, new RenderXBowBolt());
 		RenderingRegistry.registerEntityRenderingHandler(EntityUtahraptor.class, new RenderEntityUtahraptor(new ModelUtahraptor(), 0));
 		RenderingRegistry.registerEntityRenderingHandler(EntityCeratosaurus.class, new RenderEntityCeratosaurus(new ModelCeratosaurus(), 0));
 		RenderingRegistry.registerEntityRenderingHandler(EntitySuchomimus.class, new RenderEntitySuchomimus(new ModelSuchomimus(), 0));
+
+		// TileEntities
 		TileEntitySpecialRenderer render = new RenderUnknownEgg();
 		ClientRegistry.bindTileEntitySpecialRenderer(TileEntityUnknownEgg.class, render);
 		TileEntitySpecialRenderer render2 = new RenderUnknownEggOpen();
 		ClientRegistry.bindTileEntitySpecialRenderer(TileEntityUnknownEggOpen.class, render2);
-		MinecraftForgeClient.registerItemRenderer(Item.getItemFromBlock(ModBlocks.unknownEgg), new ItemRendererUnknownEgg(render,
-				new TileEntityUnknownEgg()));
-		MinecraftForgeClient.registerItemRenderer(Item.getItemFromBlock(ModBlocks.unknownEggOpen), new ItemRendererUnknownEggOpen(render2,
-				new TileEntityUnknownEggOpen()));
+
+		// Item Renderers
+		MinecraftForgeClient.registerItemRenderer(Item.getItemFromBlock(ModBlocks.unknownEgg), new ItemRendererUnknownEgg(render, new TileEntityUnknownEgg()));
+		MinecraftForgeClient.registerItemRenderer(Item.getItemFromBlock(ModBlocks.unknownEggOpen), new ItemRendererUnknownEggOpen(render2, new TileEntityUnknownEggOpen()));
 	}
 
 	public void registerTileEntitySpecialRenderer() {

@@ -17,7 +17,7 @@ public class BlockTrophyDrain extends Block {
 	private IIcon[] icons = new IIcon[6];
 
 	protected BlockTrophyDrain() {
-		super(Material.iron);
+		super(Material.ground);
 		this.setBlockName(Reference.MODID + "_" + name);
 		this.setCreativeTab(Carnivores.carnivoresTab);
 		this.setStepSound(soundTypeMetal);
@@ -44,5 +44,4 @@ public class BlockTrophyDrain extends Block {
 	public Item getItemDropped(int metadata, Random random, int fortune) {
 		return Item.getItemFromBlock(ModBlocks.trophyDrain);
 	}
-
 }

@@ -34,8 +34,7 @@ public class EntityHandler {
 		createEntity(EntitySuchomimus.class, "Suchomimus", 64, 1, true, 0x0A3D11, 0xFFBF29);
 	}
 
-	public static void createEntity(Class entityClass, String entityName, int trackingRange, int updateFrequency, boolean sendVelocityUpdates,
-			int solidColour, int spotColour) {
+	public static void createEntity(Class entityClass, String entityName, int trackingRange, int updateFrequency, boolean sendVelocityUpdates, int solidColour, int spotColour) {
 
 		int randomID = EntityRegistry.findGlobalUniqueEntityId();
 

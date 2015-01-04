@@ -29,8 +29,7 @@ public class ModBlocks {
 		// Blocks
 		unknownBox = new UnknownBox().setHardness(5.0F).setResistance(30.0F);
 		unknownEgg = new BlockUnknownEgg(Material.wood).setBlockName("UnknownEgg").setBlockTextureName(Reference.MODID + ":" + "unknownEggParticles");
-		unknownEggOpen = new BlockUnknownEggOpen(Material.wood).setBlockName("UnknownEggOpen").setBlockTextureName(
-				Reference.MODID + ":" + "unknownEggParticles");
+		unknownEggOpen = new BlockUnknownEggOpen(Material.wood).setBlockName("UnknownEggOpen").setBlockTextureName(Reference.MODID + ":" + "unknownEggParticles");
 		crate = new BlockCrate();
 		trophyDrain = new BlockTrophyDrain();
 		trophyPlatformEnd = new BlockTrophyPlatformEnd();
