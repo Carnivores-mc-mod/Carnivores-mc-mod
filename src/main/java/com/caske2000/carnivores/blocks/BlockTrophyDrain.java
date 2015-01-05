@@ -21,7 +21,7 @@ public class BlockTrophyDrain extends Block {
 		this.setBlockName(Reference.MODID + "_" + name);
 		this.setCreativeTab(Carnivores.carnivoresTab);
 		this.setStepSound(soundTypeMetal);
-		this.setBlockTextureName(name);
+		this.setBlockTextureName(Reference.MODID + ":" + name);
 	}
 
 	@Override
