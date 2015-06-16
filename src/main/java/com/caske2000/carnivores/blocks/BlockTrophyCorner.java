@@ -34,6 +34,12 @@ public class BlockTrophyCorner extends BlockSlab {
 	}
 
 	@SideOnly(Side.CLIENT)
+	public IIcon getIcon(int side, int meta) {
+
+		return side == 1 ? blockIcon : sideIcon;
+	}
+
+	@SideOnly(Side.CLIENT)
 	public Item getItem(World wrld, int x, int y, int z) {
 		return Item.getItemFromBlock(ModBlocks.trophyCorner);
 	}
